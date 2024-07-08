@@ -1,5 +1,5 @@
 {
-  "name": "rng-sugojika-cms",
+  "name": "my-ssg-app12",
   "version": "0.1.0",
   "engines": {
     "node": "20.10.0",
@@ -26,9 +26,7 @@
     "fix:lint-es": "eslint \"./src/**/*.{ts,tsx}\" --fix",
     "test": "jest --coverage",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "cms_migrate:20240605_add_default_tags:dev": "node --env-file=.env.development.local --import=tsimp/import scripts/cms_migrations/20240605_add_default_tags/main.ts",
-    "cms_migrate:20240605_add_default_tags:prod": "node --env-file=.env.production.local --import=tsimp/import scripts/cms_migrations/20240605_add_default_tags/main.ts"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@sentry/nextjs": "7.116.0",
