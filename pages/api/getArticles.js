@@ -1,5 +1,4 @@
-
-import { client } from "../..//lib/client";
+import { client } from "../../lib/client";
 
 export const getArticles = async ({
   limit,
