@@ -20,7 +20,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     slug: content.id,
     draftKey: req.query.draftKey,
   });
-  res.writeHead(307, { Location: `/${content.id}` });
+  res.writeHead(307, { Location: `/articles/${content.id}` });
   res.end('Preview mode enabled');
 };
 
