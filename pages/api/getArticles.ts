@@ -1,10 +1,10 @@
 import { client } from "../../lib/client";
 
 export const getArticles = async ({
-  limit,
+  limit = 100,
   fields,
 }: {
-  limit: number
+  limit?: number
   fields?: any
 }) => {
   return client.get({

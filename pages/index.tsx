@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { getArticles } from "./api/getArticles";
+import Link from "next/link";
 
 export const getStaticProps = (async () => {
   const articlesResponse = await getArticles({ limit: 10 });
@@ -26,7 +27,7 @@ export default function Home({articlesResponse}: any) {
       <ul>
           {articlesResponse.contents.map((article: any) => (
             <li key={article.id}>
-              <h2>{article.title}</h2>
+              <h2><Link href={`/articles/${article.id}`}>{article.title}</Link></h2>
               <p>{article.createdAt}</p>
             </li>
           ))}
