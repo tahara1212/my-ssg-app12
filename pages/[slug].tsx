@@ -1,3 +1,19 @@
+interface ContentProps {
+  content: {
+    title: string;
+    body: string;
+  };
+}
+
+const SlugPage: React.FC<ContentProps> = ({ content }) => {
+  return (
+    <div>
+      <h1>{content.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: content.body }}></div>
+    </div>
+  );
+};
+
 export const getStaticProps = async (context: any) => {
   const slug = context.params?.slug;
   const draftKey = context.previewData?.draftKey;
@@ -14,3 +30,5 @@ export const getStaticProps = async (context: any) => {
      }
    };
  };
+
+ export default SlugPage;
