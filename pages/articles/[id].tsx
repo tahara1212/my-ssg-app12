@@ -1,6 +1,10 @@
 import { client } from "../../lib/client";
 
 export default function ArticlePage({ blog: article }: any) {
+  if (!article) {
+    return <h1>Error</h1>;
+  }
+
   return (
     <main>
     <h1>{article.title}</h1>
