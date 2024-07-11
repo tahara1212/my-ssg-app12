@@ -26,12 +26,15 @@ export const getStaticPaths = async () => {
     params: { slug: article.id },
   }));
 
-  return { paths, fallback: false };
+  return { paths, fallback: true };
 };
 
 export const getStaticProps = async (context: any) => {
   const slug = context.params?.slug;
   const draftKey = context.previewData?.draftKey;
+
+  console.log('getStaticProps called with', { slug, draftKey });
+  
   const content = await fetch(
     `https://${process.env.MICROCMS_SERVICE_DOMAIN}.microcms.io/api/v1/articles/${slug}${
       draftKey !== undefined ? `?draftKey=${draftKey}` : ''
