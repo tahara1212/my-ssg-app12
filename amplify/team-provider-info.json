@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-myssgapp12-dev-c1d64-authRole",
+      "UnauthRoleArn": "arn:aws:iam::654654465768:role/amplify-myssgapp12-dev-c1d64-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::654654465768:role/amplify-myssgapp12-dev-c1d64-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-myssgapp12-dev-c1d64-deployment",
+      "UnauthRoleName": "amplify-myssgapp12-dev-c1d64-unauthRole",
+      "StackName": "amplify-myssgapp12-dev-c1d64",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:654654465768:stack/amplify-myssgapp12-dev-c1d64/78dcea80-4360-11ef-8036-0acf2a681b77",
+      "AmplifyAppId": "d2mz9zk65xv94p"
+    },
+    "categories": {
+      "function": {
+        "myssgapp127ae67af7": {
+          "deploymentBucketName": "amplify-myssgapp12-dev-c1d64-deployment",
+          "s3Key": "amplify-builds/myssgapp127ae67af7-754d6c4b4a416e373146-build.zip"
+        }
+      }
+    }
+  }
+}

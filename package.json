@@ -6,14 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "addArticles": "node --env-file=.env.local --import=tsimp/import scripts/add_articles.ts"
   },
   "dependencies": {
     "microcms-js-sdk": "^3.1.2",
     "next": "14.1.0",
     "node-fetch": "^3.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tsimp": "^2.0.11"
   },
   "devDependencies": {
     "@next/env": "14.1.0",
