@@ -15,7 +15,7 @@
       "function": {
         "myssgapp127ae67af7": {
           "deploymentBucketName": "amplify-myssgapp12-dev-c1d64-deployment",
-          "s3Key": "amplify-builds/myssgapp127ae67af7-754d6c4b4a416e373146-build.zip"
+          "s3Key": "amplify-builds/myssgapp127ae67af7-742b6770533452304b78-build.zip"
         }
       }
     }

@@ -10,6 +10,7 @@
     "addArticles": "node --env-file=.env.local --import=tsimp/import scripts/add_articles.ts"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "microcms-js-sdk": "^3.1.2",
     "next": "14.1.0",
     "node-fetch": "^3.3.2",
